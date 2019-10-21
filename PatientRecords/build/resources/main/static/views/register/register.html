@@ -1,0 +1,60 @@
+<div class="container" ng-controller="registerController">
+    <h4>Registration form</h4>
+    <div class="col-sm-6 col-sm-6">
+
+        <form class="form-horizontal" name="eventForm" method="POST" ng-submit="addNewParticipant()">
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Enter a name:</label>
+                <div class="col-sm-6">
+                    <input type="text" name="name" ng-model="participant.name" class="form-control"
+                           required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Enter a age:</label>
+                <div class="col-sm-6">
+                    <input type="text" name="age" ng-model="participant.age" class="form-control"
+                           required/>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Enter a height:</label>
+                <div class="col-sm-6">
+                    <input type="text" name="height" ng-model="participant.height" class="form-control"
+                           required/>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Enter a weight:</label>
+                <div class="col-sm-6">
+                    <input type="text" name="weight" ng-model="participant.weight" class="form-control"
+                           required/>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Enter a blood pressure:</label>
+                <div class="col-sm-6">
+                    <input type="text" name="bloodPressure" ng-model="participant.bloodPressure"
+                           class="form-control" required/>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <button type="submit" class="btn-info" ng-click="previous()">&laquo; Previous</button>
+            <button type="submit" class="btn btn-primary col-sm-offset-3">Save</button>
+            <button type="reset" class="form-button-reset" ng-click="participantAdded = ''">Reset</button>
+
+            <div class="form-group" ng-show="participantAdded && participantAdded.length > 0">
+                <label class="col-sm-8 control-label"><b>{{participantAdded}}</b></label>
+            </div>
+        </form>
+    </div>
+</div>

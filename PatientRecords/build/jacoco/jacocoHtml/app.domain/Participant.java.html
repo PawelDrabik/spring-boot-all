@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Participant.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">registration</a> &gt; <a href="index.source.html" class="el_package">app.domain</a> &gt; <span class="el_source">Participant.java</span></div><h1>Participant.java</h1><pre class="source lang-java linenums">package app.domain;
+
+public class Participant {
+
+    private String name;
+    private String age;
+    private String height;
+    private String weight;
+    private String bloodPressure;
+
+<span class="fc" id="L11">    public Participant(String name, String age, String height, String weight, String bloodPressure) {</span>
+<span class="fc" id="L12">        this.name = name;</span>
+<span class="fc" id="L13">        this.age = age;</span>
+<span class="fc" id="L14">        this.height = height;</span>
+<span class="fc" id="L15">        this.weight = weight;</span>
+<span class="fc" id="L16">        this.bloodPressure = bloodPressure;</span>
+<span class="fc" id="L17">    }</span>
+
+    public String getName() {
+<span class="fc" id="L20">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="fc" id="L24">        this.name = name;</span>
+<span class="fc" id="L25">    }</span>
+
+    public String getAge() {
+<span class="fc" id="L28">        return age;</span>
+    }
+
+    public void setAge(String age) {
+<span class="fc" id="L32">        this.age = age;</span>
+<span class="fc" id="L33">    }</span>
+
+    public String getHeight() {
+<span class="fc" id="L36">        return height;</span>
+    }
+
+    public void setHeight(String height) {
+<span class="fc" id="L40">        this.height = height;</span>
+<span class="fc" id="L41">    }</span>
+
+    public String getWeight() {
+<span class="fc" id="L44">        return weight;</span>
+    }
+
+    public void setWeight(String weight) {
+<span class="fc" id="L48">        this.weight = weight;</span>
+<span class="fc" id="L49">    }</span>
+
+    public String getBloodPressure() {
+<span class="fc" id="L52">        return bloodPressure;</span>
+    }
+
+    public void setBloodPressure(String bloodPressure) {
+<span class="fc" id="L56">        this.bloodPressure = bloodPressure;</span>
+<span class="fc" id="L57">    }</span>
+
+    @Override
+    public String toString() {
+<span class="fc" id="L61">        return String.format(</span>
+                &quot;Participant[name='%s', age='%s', height='%s', weight='%s']&quot;,
+                name, age, height, weight);
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

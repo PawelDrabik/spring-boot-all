@@ -1,0 +1,28 @@
+<div class="container" ng-controller="listParticipantsController">
+    <br/><h4>Get all participants</h4><br/>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Height</th>
+                <th>Weight</th>
+                <th>Blood Pressure</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in clinicalInfos">
+                <td>{{item['id']}}</td>
+                <td>{{item['name']}}</td>
+                <td>{{item['age']}}</td>
+                <td>{{item['height']}}</td>
+                <td>{{item['weight']}}</td>
+                <td>{{item['bloodPressure']}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <button type="submit" class="btn-info" ng-click="previous()">&laquo; Previous</button>
+    </div>
+</div>

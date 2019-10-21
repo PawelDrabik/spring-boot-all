@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.domain.ParticipantTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-21T16:23:27" hostname="DESKTOP-BRDNIHI" time="0.0">
+  <properties/>
+  <testcase name="getParticipant" classname="app.domain.ParticipantTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
